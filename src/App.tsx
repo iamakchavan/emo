@@ -644,7 +644,7 @@ function App() {
                   </li>
                   <li className="flex items-center text-gray-400 font-magnetik group">
                     <Phone className="w-5 h-5 mr-3 text-green-400 group-hover:text-green-300 transition-colors duration-300" />
-                    <span>+91 (080) 4567-8900</span>
+                    <span>+91 90085 00690</span>
                   </li>
                   <li className="flex items-center text-gray-400 font-magnetik group">
                     <Mail className="w-5 h-5 mr-3 text-green-400 group-hover:text-green-300 transition-colors duration-300" />
