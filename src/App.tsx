@@ -9,6 +9,7 @@ import { motion } from 'framer-motion';
 import { useState } from 'react';
 import { ComingSoon } from './components/ui/coming-soon';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import emoLogo from './components/ui/em.png';
 
 const fadeInUpVariant = {
   hidden: { opacity: 0, y: 20 },
@@ -26,7 +27,9 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-14 md:h-20 items-center">
             <div className="flex items-center space-x-8">
-              <div className="text-xl md:text-2xl font-bold text-green-600 font-magnetik tracking-tight">EMO</div>
+              <div className="flex items-center">
+                <img src={emoLogo} alt="EMO Logo" className="h-8 md:h-10 w-auto" />
+              </div>
               <div className="hidden md:flex space-x-1">
                 <Link to="/" className="group relative px-4 py-2 text-gray-600 font-magnetik transition-all duration-300 hover:text-green-600 hover:scale-105">
                   <span>Home</span>
@@ -117,7 +120,9 @@ function App() {
         />
         <div className={`absolute right-0 top-0 h-full w-[300px] bg-white/95 backdrop-blur-sm shadow-2xl transform transition-all duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] z-[101] ${isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
           <div className="flex items-center justify-between p-6">
-            <div className="text-xl font-bold text-green-600 font-magnetik tracking-tight">EMO</div>
+            <div className="flex items-center">
+              <img src={emoLogo} alt="EMO Logo" className="h-6 w-auto" />
+            </div>
             <button 
               className="p-2 hover:bg-black/5 rounded-full transition-all duration-300"
               onClick={() => setIsMobileMenuOpen(false)}
