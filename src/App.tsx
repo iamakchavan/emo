@@ -28,7 +28,7 @@ function App() {
           <div className="flex justify-between h-14 md:h-20 items-center">
             <div className="flex items-center space-x-8">
               <div className="flex items-center">
-                <img src={emoLogo} alt="EMO Logo" className="h-8 md:h-10 w-auto" />
+                <img src={emoLogo} alt="EMO Logo" className="h-10 md:h-14 w-auto object-contain my-2 md:my-3" />
               </div>
               <div className="hidden md:flex space-x-1">
                 <Link to="/" className="group relative px-4 py-2 text-gray-600 font-magnetik transition-all duration-300 hover:text-green-600 hover:scale-105">
@@ -121,7 +121,7 @@ function App() {
         <div className={`absolute right-0 top-0 h-full w-[300px] bg-white/95 backdrop-blur-sm shadow-2xl transform transition-all duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] z-[101] ${isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
           <div className="flex items-center justify-between p-6">
             <div className="flex items-center">
-              <img src={emoLogo} alt="EMO Logo" className="h-6 w-auto" />
+              <img src={emoLogo} alt="EMO Logo" className="h-9 w-auto object-contain my-1" />
             </div>
             <button 
               className="p-2 hover:bg-black/5 rounded-full transition-all duration-300"
