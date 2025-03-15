@@ -121,10 +121,10 @@ function App() {
         <div className={`absolute right-0 top-0 h-full w-[300px] bg-white/95 backdrop-blur-sm shadow-2xl transform transition-all duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] z-[101] ${isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
           <div className="flex items-center justify-between p-6">
             <div className="flex items-center">
-              <img src={emoLogo} alt="EMO Logo" className="h-9 w-auto object-contain my-1" />
+              <img src={emoLogo} alt="EMO Logo" className="h-14 w-auto object-contain my-2" />
             </div>
             <button 
-              className="p-2 hover:bg-black/5 rounded-full transition-all duration-300"
+              className="p-2 ml-2 hover:bg-black/5 rounded-full transition-all duration-300"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               <X className="w-5 h-5 text-gray-600" />
