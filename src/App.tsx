@@ -596,7 +596,9 @@ function App() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 pb-12 border-b border-gray-700/50">
               {/* Company Info */}
               <div>
-                <div className="text-2xl font-bold text-green-400 font-magnetik tracking-tight mb-6">EMO</div>
+                <div className="flex items-center mb-6">
+                  <img src={emoLogo} alt="EMO Logo" className="h-9 w-auto object-contain" />
+                </div>
                 <p className="text-gray-400 font-magnetik mb-8 leading-relaxed">
                   Revolutionizing urban mobility with sustainable electric transportation solutions.
                 </p>
@@ -661,8 +663,10 @@ function App() {
 
             <div className="mt-8 pt-8">
               <div className="flex flex-col md:flex-row md:items-center md:justify-between space-y-4 md:space-y-0">
-                <div className="text-center md:text-left text-gray-500 font-magnetik text-sm">
-                  © {new Date().getFullYear()} EMO. All rights reserved.
+                <div className="text-center md:text-left text-gray-500 font-magnetik text-sm flex items-center justify-center md:justify-start">
+                  <span>© {new Date().getFullYear()}</span>
+                  <img src={emoLogo} alt="EMO Logo" className="h-5 w-auto object-contain mx-1" />
+                  <span>All rights reserved.</span>
                 </div>
                 <div className="flex items-center justify-center md:justify-end space-x-8">
                   <a href="#" className="text-gray-400 hover:text-green-400 transition-colors duration-300 text-sm font-magnetik">Terms</a>
