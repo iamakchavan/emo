@@ -597,7 +597,7 @@ function App() {
               {/* Company Info */}
               <div>
                 <div className="flex items-center mb-8">
-                  <img src={emoLogo} alt="EMO Logo" className="h-14 w-auto object-contain py-2" />
+                  <img src={emoLogo} alt="EMO Logo" className="h-24 w-auto object-contain py-2" />
                 </div>
                 <p className="text-gray-400 font-magnetik mb-8 leading-relaxed">
                   Revolutionizing urban mobility with sustainable electric transportation solutions.
